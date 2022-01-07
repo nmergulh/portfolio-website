@@ -9,15 +9,33 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Neil Mergulhao
           </a>
-          <div className="itemContainer">
+          <a
+            className="itemContainer"
+            href="https://linkedin.com/in/neilmergulhao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedIn className="icon" />
-          </div>
-          <div className="itemContainer">
+            <span>linkedin.com/in/neilmergulhao</span>
+          </a>
+          <a
+            className="itemContainer"
+            href="https://github.com/nmergulh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GitHub className="icon" />
-          </div>
-          <div className="itemContainer">
+            <span>github.com/nmergulh</span>
+          </a>
+          <a
+            className="itemContainer"
+            href="mailto: nmergulh@live.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Email className="icon" />
-          </div>
+            <span>nmergulh@live.com</span>
+          </a>
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
