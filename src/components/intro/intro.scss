@@ -1,3 +1,93 @@
 .intro {
-  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  .top {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+
+    .backgroundContainer {
+      width: 100%;
+      height: 340px;
+      position: absolute;
+      z-index: 1;
+      box-shadow: 0 0 10px 10px white inset;
+      background-image: url("../../../public/assets/profilepicbackground.jpeg");
+    }
+
+    .topLeft {
+      position: relative;
+      flex: 0.3;
+      z-index: 2;
+      overflow-x: visible;
+
+      .imgContainer {
+        margin-top: 40px;
+        width: 350px;
+        height: 350px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+
+        img {
+          justify-content: center;
+          height: 100%;
+          z-index: 1;
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        img:hover {
+          width: 310px;
+          height: 310px;
+        }
+      }
+    }
+    .topRight {
+      flex: 0.7;
+      position: relative;
+      z-index: 2;
+
+      .wrapper {
+        margin-top: 100px;
+        width: 100%;
+        height: 70%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          font-size: 50px;
+          margin: 10px 0;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: 25px;
+        }
+      }
+      a {
+        position: absolute;
+        bottom: 20px;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+
+    .profileDescription {
+      margin: 20px;
+    }
+  }
 }
