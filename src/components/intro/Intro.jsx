@@ -1,5 +1,6 @@
 import "./intro.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
@@ -11,7 +12,7 @@ export default function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       strings: [
-        "Trainee Software Developer",
+        "Trainee Full Stack Developer",
         "Northcoders Graduate",
         "Ex-Business Consultant",
       ],
@@ -43,11 +44,32 @@ export default function Intro() {
             and banking. I undertook a variety of roles from PMO to Business
             Analyst. However, I wanted to become more involved in digital
             transformation from the technical side. As such, I joined
-            Northcoders 13-week Full Stack Software Development course
+            <a href="https://northcoders.com/"> Northcoders</a> 13-week Full
+            Stack Software Development course
           </h4>
         </div>
+        <div className="testimonials">
+          <div className="container">
+            <div className="card">
+              <div className="top">
+                <img src="assets/richHMCTS.jpeg" alt="Richard Cabral" />
+                <LinkedInIcon sx={{ color: "#2867B2" }} className="linkedin" />
+              </div>
+              <div className="center">
+                It’s been a pleasure working with Neil. From process improvement
+                using JIRA and Confluence to updating milestones on the
+                programme plan, Neil is able to take on a variety of tasks with
+                ease.
+              </div>
+              <div className="bottom">
+                <h3>Richard</h3>
+                <h4>Senior Consultant at P2 Consulting</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <a href="#portfolio">
+      <a href="#portfolio" className="down">
         <KeyboardArrowDownIcon
           sx={{ fontSize: "50px", margin: "10px", color: "#15023a" }}
         />

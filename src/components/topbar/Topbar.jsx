@@ -15,7 +15,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedIn className="icon" />
+            <LinkedIn className="icon" sx={{ color: "#2867B2" }} />
             <span>linkedin.com/in/neilmergulhao</span>
           </a>
           <a
