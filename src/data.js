@@ -129,3 +129,20 @@ export const backend = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
   },
 ];
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: "Richard Cabral",
+    title: "Senior Consultant at P2 Consulting",
+    img: "assets/richHMCTS.jpeg",
+    desc: "It's been a pleasure working with Neil. From process improvement using JIRA and Confluence to updating milestones on the programme plan, Neil is able to take on a variety of tasks with ease.",
+  },
+  {
+    id: 2,
+    name: "Richard Pople",
+    title: "OSS specialist at Virgin Media",
+    img: "assets/richVirginMedia.jpeg",
+    desc: "Neil is great at helping projects to move forward; during his one year with us he demonstrated high levels of autonomy and creative thinking - he has a 'can do' attitude and was very capable of taking a problem away, researching it and then coming back with a solution...",
+  },
+];

@@ -3,6 +3,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { testimonialData } from "../../data";
 
 export default function Intro() {
   const textRef = useRef();
@@ -50,22 +51,22 @@ export default function Intro() {
         </div>
         <div className="testimonials">
           <div className="container">
-            <div className="card">
-              <div className="top">
-                <img src="assets/richHMCTS.jpeg" alt="Richard Cabral" />
-                <LinkedInIcon sx={{ color: "#2867B2" }} className="linkedin" />
+            {testimonialData.map((data) => (
+              <div className="card" key={data.id}>
+                <div className="top">
+                  <img src={data.img} alt={data.name} />
+                  <LinkedInIcon
+                    sx={{ color: "#2867B2" }}
+                    className="linkedin"
+                  />
+                </div>
+                <div className="center">{data.desc}</div>
+                <div className="bottom">
+                  <h3>{data.name}</h3>
+                  <h4>{data.title}</h4>
+                </div>
               </div>
-              <div className="center">
-                It’s been a pleasure working with Neil. From process improvement
-                using JIRA and Confluence to updating milestones on the
-                programme plan, Neil is able to take on a variety of tasks with
-                ease.
-              </div>
-              <div className="bottom">
-                <h3>Richard</h3>
-                <h4>Senior Consultant at P2 Consulting</h4>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
